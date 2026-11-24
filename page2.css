@@ -1,0 +1,117 @@
+body{
+
+background-color: rgb(220, 220, 220);
+
+
+}
+
+
+.Box{
+ width: 600px;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: inset 0 0 150px rgb(0, 0, 0),
+                0 0 10px rgb(0, 0, 0);
+    border-radius:8%; 
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    border: 2px solid;
+    animation: glow 2s ease-in infinite alternate;
+    display: flex;
+justify-content: center;
+border-color: rgb(116, 211, 255);
+ overflow: hidden;
+}
+
+.Box2{
+    width: 320px;
+    height: 107%;
+    box-sizing: border-box;
+    border-radius: 12%;
+    background-color: rgb(170, 242, 255);
+    margin-top: 2px;
+    position: absolute;
+    left: 0;
+    border: 3px solid;
+    border-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    
+}
+
+.text, .password, .button, h1, a {
+position: absolute;
+margin-right: 46%;
+margin-bottom: 4%;
+}
+.text{
+    margin-bottom: 20%;
+    border-radius: 3px;
+    padding: 3px;
+
+}
+
+h1{
+    font: bold;
+    color: white;
+    margin-bottom: 40%;
+    margin-left: -12%;
+    
+}
+
+.button{
+
+    margin-top: 10%;
+
+}
+
+.password {
+    padding: 3px;;
+    border-radius: 3px;
+
+}
+
+.Box:hover .Box2{
+    transform: translateX(280px);
+    
+}
+
+a{
+    position: absolute;
+    margin-top: 40%;
+
+}
+
+.dot{
+    width: 0px;
+    height: 0px;
+    margin-bottom: 310px;
+    border: 150px;
+    margin-right: 510px;
+    border-color: white;
+    background-color: rgb(0, 0, 0);
+    animation: glowing 1s infinite alternate;
+}
+@keyframes glowing{
+     from{
+             box-shadow: 0 0 70px 40px  rgb(120, 120, 120);
+     }to{
+             box-shadow: 0 0 70px 20px  rgb(255, 255, 255)
+     }
+}
+
+@keyframes glow{
+
+    from{
+        box-shadow: 0px 0 10px 7px rgb(142, 232, 255);
+    }
+     to{
+        box-shadow: 0 0 10px 7px rgb(0, 64, 255);
+     }
+}
+
